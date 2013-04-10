@@ -1,0 +1,12 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (94.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (46.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to InitialMigration (20130410084818)
+  [1m[35m (88.6ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `crypted_password` varchar(40), `salt` varchar(40), `remember_token` varchar(255), `remember_token_expires_at` datetime, `name` varchar(255), `email_address` varchar(255), `administrator` tinyint(1) DEFAULT 0, `created_at` datetime, `updated_at` datetime, `state` varchar(255) DEFAULT 'invited', `key_timestamp` datetime) ENGINE=InnoDB
+  [1m[36m (59.8ms)[0m  [1mCREATE INDEX `index_users_on_state` ON `users` (`state`)[0m
+  [1m[35m (10.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130410084818')
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
