@@ -309,3 +309,581 @@ Processing by FrontController#index as HTML
   Rendered front/index.dryml (738.0ms)
 Completed 200 OK in 762ms (Views: 746.5ms | ActiveRecord: 1.2ms)
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-11 13:13:34 +0900
+Processing by FrontController#index as HTML
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+Redirected to http://localhost:3000/login
+Filter chain halted as #<Proc:0xba489e4@/home/ubuntu/Documents/projects/panther/app/controllers/application_controller.rb:5> rendered or redirected
+Completed 302 Found in 83ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-04-11 13:13:35 +0900
+Processing by UsersController#login as HTML
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/dryml-2.0.0/taglibs/core.dryml in 0.25s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/update_button.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/buttons.dryml in 0.09s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/remote_method_button.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/transition_button.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/transition_link.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/delete-button.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/create_button.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cache/cache.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cache/nested_cache.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cache/swept_cache.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cards/search_card.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cards/card.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cards/cards.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/editors/editors.dryml in 0.18s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/editors/click_editor.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/editors/live_editor.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/forms.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/error_messages.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/form.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/formlet.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/submit.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/footer.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/table.dryml in 0.10s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/header.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/html.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/image.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/empty_tag.dryml in 0.12s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/javascript.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/doctype.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/aside.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/section.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/a.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/stylesheet.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/section_group.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/if_ie.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/model_name_human.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/t.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/i18n.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/human_collection_name.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/ht.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/inputs.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_all.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/after_submit.dryml in 0.08s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/collection_input.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/check_many.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_many.dryml in 0.07s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/select_many.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/hot_input.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/select_menu.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_for_date.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/sti_type_input.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_for.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/or_cancel.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/select_input.dryml in 0.08s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/hidden_field.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/select_one.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_for_enum_string.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/lists.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/collection.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/empty_collection_message.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/labelled_item_list.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/feckless_fieldset.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/with_fields.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/field_list.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/field_list_v1.dryml in 0.07s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/account_disabled.dryml in 0.05s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/permission_denied_page.dryml in 0.17s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/login.dryml in 0.11s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/flash_message.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/not_found_page.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/page_nav.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/pages.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/forgot_password.dryml in 0.08s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/account.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/live_search.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/plus.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/search_filter.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/filter_menu.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/collection_preview.dryml in 0.12s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/gravatar.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/table_plus.dryml in 0.08s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/record_flags.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/views.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/view.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/links_for_collection.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/comma_list.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/view_for.dryml in 0.07s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/nil_view.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/name.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/a_or_an.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/count.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/you.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/collection_name.dryml in 0.09s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/type_name.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/hobo_rapid.dryml in 3.43s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery-2.0.0/taglibs/hobo_jquery.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/alert_box.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/search.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/buttons.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/forms.dryml in 0.20s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/error_messages.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/login.dryml in 0.08s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/delete_button.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/flash_message.dryml in 0.18s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/input_many.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/select_many.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/table-plus.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/show_page.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/page.dryml in 0.15s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/lifecycle.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/edit_page.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/page_nav.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/tabs.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/card.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/nav.dryml in 0.19s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/index_page.dryml in 0.05s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/hobo_bootstrap.dryml in 1.20s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/datepicker.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/combobox.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/accordion.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/accordion-list.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/sortable_collection.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/sortable_input_many.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/autocomplete.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/toggle.dryml in 0.05s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/accordion_collection.dryml in 0.06s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/dialog_box.dryml in 0.06s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/tabs.dryml in 0.25s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/overrides.dryml in 0.05s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/name_one.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/hobo_jquery_ui.dryml in 0.79s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/typeahead.dryml in 0.05s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/select_one_or_new.dryml in 0.07s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/modal.dryml in 0.09s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/bootstrap_datepicker.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/name_one_bootstrap.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/overrides.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/hobo_bootstrap_ui.dryml in 0.36s
+  DRYML: Compiled app/views/taglibs/auto/rapid/cards.dryml in 0.04s
+  DRYML: Compiled app/views/taglibs/auto/rapid/pages.dryml in 0.25s
+  DRYML: Compiled app/views/taglibs/auto/rapid/forms.dryml in 0.07s
+  DRYML: Compiled app/views/taglibs/application.dryml in 0.02s
+  DRYML: Compiled app/views/taglibs/front_site.dryml in 6.34s
+  Rendered controller: users; dryml-tag: login-page (2908.2ms)
+Completed 200 OK in 10233ms (Views: 10173.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-04-11 13:13:54 +0900
+Processing by UsersController#login as HTML
+  Parameters: {"page_path"=>"/login", "authenticity_token"=>"5NYdcGJoOxPhyYjsg+8RRDBFvfvOOGv+do4S9uNgXf0=", "login"=>"juan.ctt@live.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE (email_address = 'juan.ctt@live.com') LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 112ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-11 13:13:54 +0900
+Processing by FrontController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+  [1m[35mUser Load (3.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  DRYML: Compiled app/views/front/index.dryml in 0.15s
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `users` 
+  Rendered front/index.dryml (1713.4ms)
+Completed 200 OK in 1829ms (Views: 1820.6ms | ActiveRecord: 4.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-02 16:39:22 +0900
+Processing by FrontController#index as HTML
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+Redirected to http://localhost:3000/login
+Filter chain halted as #<Proc:0xc21fbf4@/home/ubuntu/Documents/projects/panther/app/controllers/application_controller.rb:5> rendered or redirected
+Completed 302 Found in 69ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-02 16:39:23 +0900
+Processing by UsersController#login as HTML
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/dryml-2.0.0/taglibs/core.dryml in 0.15s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/update_button.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/buttons.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/remote_method_button.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/transition_button.dryml in 0.06s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/transition_link.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/delete-button.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/create_button.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cache/cache.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cache/nested_cache.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cache/swept_cache.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cards/search_card.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cards/card.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cards/cards.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/editors/editors.dryml in 0.13s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/editors/click_editor.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/editors/live_editor.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/forms.dryml in 0.08s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/error_messages.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/form.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/formlet.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/submit.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/footer.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/table.dryml in 0.08s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/header.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/html.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/image.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/empty_tag.dryml in 0.06s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/javascript.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/doctype.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/aside.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/section.dryml in 0.10s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/a.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/stylesheet.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/section_group.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/if_ie.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/model_name_human.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/t.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/i18n.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/human_collection_name.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/ht.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/inputs.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_all.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/after_submit.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/collection_input.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/check_many.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_many.dryml in 0.16s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/select_many.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/hot_input.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/select_menu.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_for_date.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/sti_type_input.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_for.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/or_cancel.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/select_input.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/hidden_field.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/select_one.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_for_enum_string.dryml in 0.11s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/lists.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/collection.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/empty_collection_message.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/labelled_item_list.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/feckless_fieldset.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/with_fields.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/field_list.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/field_list_v1.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/account_disabled.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/permission_denied_page.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/login.dryml in 0.16s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/flash_message.dryml in 0.05s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/not_found_page.dryml in 0.18s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/page_nav.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/pages.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/forgot_password.dryml in 0.07s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/account.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/live_search.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/plus.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/search_filter.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/filter_menu.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/collection_preview.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/gravatar.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/table_plus.dryml in 0.26s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/record_flags.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/views.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/view.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/links_for_collection.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/comma_list.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/view_for.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/nil_view.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/name.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/a_or_an.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/count.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/you.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/collection_name.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/type_name.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/hobo_rapid.dryml in 3.80s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery-2.0.0/taglibs/hobo_jquery.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/alert_box.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/search.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/buttons.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/forms.dryml in 0.17s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/error_messages.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/login.dryml in 0.13s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/delete_button.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/flash_message.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/input_many.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/select_many.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/table-plus.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/show_page.dryml in 0.14s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/page.dryml in 0.14s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/lifecycle.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/edit_page.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/page_nav.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/tabs.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/card.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/nav.dryml in 0.09s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/index_page.dryml in 0.05s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/hobo_bootstrap.dryml in 1.13s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/datepicker.dryml in 0.15s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/combobox.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/accordion.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/accordion-list.dryml in 0.07s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/sortable_collection.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/sortable_input_many.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/autocomplete.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/toggle.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/accordion_collection.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/dialog_box.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/tabs.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/overrides.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/name_one.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/hobo_jquery_ui.dryml in 0.64s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/typeahead.dryml in 0.12s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/select_one_or_new.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/modal.dryml in 0.05s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/bootstrap_datepicker.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/name_one_bootstrap.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/overrides.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/hobo_bootstrap_ui.dryml in 0.30s
+  DRYML: Compiled app/views/taglibs/auto/rapid/cards.dryml in 0.03s
+  DRYML: Compiled app/views/taglibs/auto/rapid/pages.dryml in 0.15s
+  DRYML: Compiled app/views/taglibs/auto/rapid/forms.dryml in 0.08s
+  DRYML: Compiled app/views/taglibs/application.dryml in 0.01s
+  DRYML: Compiled app/views/taglibs/front_site.dryml in 6.41s
+  Rendered controller: users; dryml-tag: login-page (4073.3ms)
+Completed 200 OK in 11347ms (Views: 11304.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-07-02 16:39:49 +0900
+Processing by UsersController#login as HTML
+  Parameters: {"page_path"=>"/login", "authenticity_token"=>"w81mjU87k6RA8zfHILbdY4doQTp23EZCN9IUjJxPTok=", "login"=>"juan.ctt@live.com", "password"=>"[FILTERED]", "remember_me"=>"on"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT `users`.* FROM `users` WHERE (email_address = 'juan.ctt@live.com') LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (18.0ms)[0m  UPDATE `users` SET `remember_token_expires_at` = '2013-07-16 07:39:49', `remember_token` = '096791ce2ca923c7e78fa39dfece053f799a1440', `updated_at` = '2013-07-02 07:39:49' WHERE `users`.`id` = 1
+  [1m[36m (57.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 574ms (ActiveRecord: 82.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-02 16:39:49 +0900
+Processing by FrontController#index as HTML
+  [1m[35m (5.5ms)[0m  SELECT COUNT(*) FROM `users` 
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  DRYML: Compiled app/views/front/index.dryml in 0.03s
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` LIMIT 30
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+  Rendered front/index.dryml (1421.5ms)
+Completed 200 OK in 1586ms (Views: 1434.4ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-02 16:40:53 +0900
+Processing by FrontController#index as HTML
+  [1m[35m (4.8ms)[0m  SELECT COUNT(*) FROM `users` 
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (1.3ms)[0m  SELECT `users`.* FROM `users` LIMIT 30
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+  Rendered front/index.dryml (696.9ms)
+Completed 200 OK in 714ms (Views: 697.9ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/users/1-administrator" for 127.0.0.1 at 2013-07-02 16:40:59 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1-administrator"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `users` 
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30[0m
+  Rendered controller: users; dryml-tag: show-page (1069.0ms)
+Completed 200 OK in 1090ms (Views: 1071.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1-administrator/edit" for 127.0.0.1 at 2013-07-02 16:45:03 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1-administrator"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `users` 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30[0m
+  Rendered controller: users; dryml-tag: edit-page (848.8ms)
+Completed 200 OK in 863ms (Views: 850.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/1-administrator" for 127.0.0.1 at 2013-07-02 16:45:12 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1-administrator"}
+  [1m[35m (2.7ms)[0m  SELECT COUNT(*) FROM `users` 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 30[0m
+  Rendered controller: users; dryml-tag: show-page (907.8ms)
+Completed 200 OK in 931ms (Views: 913.9ms | ActiveRecord: 3.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 192.168.0.67 at 2013-07-03 14:16:44 +0900
+Processing by FrontController#index as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+Redirected to http://192.168.0.100:3000/login
+Filter chain halted as #<Proc:0xc23e018@/home/ubuntu/Documents/projects/panther/app/controllers/application_controller.rb:5> rendered or redirected
+Completed 302 Found in 55ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 192.168.0.67 at 2013-07-03 14:16:50 +0900
+Processing by UsersController#login as HTML
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/dryml-2.0.0/taglibs/core.dryml in 0.12s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/update_button.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/buttons.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/remote_method_button.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/transition_button.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/transition_link.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/delete-button.dryml in 0.24s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/buttons/create_button.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cache/cache.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cache/nested_cache.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cache/swept_cache.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cards/search_card.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cards/card.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/cards/cards.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/editors/editors.dryml in 0.10s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/editors/click_editor.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/editors/live_editor.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/forms.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/error_messages.dryml in 0.10s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/form.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/formlet.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/forms/submit.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/footer.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/table.dryml in 0.05s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/header.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/html.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/image.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/empty_tag.dryml in 0.05s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/javascript.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/doctype.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/aside.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/section.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/a.dryml in 0.10s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/stylesheet.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/section_group.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/html/if_ie.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/model_name_human.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/t.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/i18n.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/human_collection_name.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/i18n/ht.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/inputs.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_all.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/after_submit.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/collection_input.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/check_many.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_many.dryml in 0.13s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/select_many.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/hot_input.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/select_menu.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_for_date.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/sti_type_input.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_for.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/or_cancel.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/select_input.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/hidden_field.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/select_one.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/inputs/input_for_enum_string.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/lists.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/collection.dryml in 0.09s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/empty_collection_message.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/labelled_item_list.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/feckless_fieldset.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/with_fields.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/field_list.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/lists/field_list_v1.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/account_disabled.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/permission_denied_page.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/login.dryml in 0.09s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/flash_message.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/not_found_page.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/page_nav.dryml in 0.09s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/pages.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/forgot_password.dryml in 0.06s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/pages/account.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/live_search.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/plus.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/search_filter.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/filter_menu.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/collection_preview.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/gravatar.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/plus/table_plus.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/record_flags.dryml in 0.10s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/views.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/view.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/links_for_collection.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/comma_list.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/view_for.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/nil_view.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/name.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/a_or_an.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/count.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/you.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/collection_name.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/views/type_name.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_rapid-2.0.0/taglibs/hobo_rapid.dryml in 3.05s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery-2.0.0/taglibs/hobo_jquery.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/alert_box.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/search.dryml in 0.09s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/buttons.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/forms.dryml in 0.09s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/error_messages.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/login.dryml in 0.06s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/delete_button.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/flash_message.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/input_many.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/select_many.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/table-plus.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/show_page.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/page.dryml in 0.18s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/lifecycle.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/edit_page.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/page_nav.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/tabs.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/card.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/nav.dryml in 0.06s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/index_page.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap-2.0.0/taglibs/hobo_bootstrap.dryml in 0.80s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/datepicker.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/combobox.dryml in 0.10s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/accordion.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/accordion-list.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/sortable_collection.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/sortable_input_many.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/autocomplete.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/toggle.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/accordion_collection.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/dialog_box.dryml in 0.03s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/tabs.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/overrides.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/name_one.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_jquery_ui-2.0.0/taglibs/hobo_jquery_ui.dryml in 0.45s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/typeahead.dryml in 0.01s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/select_one_or_new.dryml in 0.11s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/modal.dryml in 0.04s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/bootstrap_datepicker.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/name_one_bootstrap.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/overrides.dryml in 0.02s
+  DRYML: Compiled /home/ubuntu/.rvm/gems/ruby-1.9.2-p290@panther/gems/hobo_bootstrap_ui-2.0.0/taglibs/hobo_bootstrap_ui.dryml in 0.24s
+  DRYML: Compiled app/views/taglibs/auto/rapid/cards.dryml in 0.02s
+  DRYML: Compiled app/views/taglibs/auto/rapid/pages.dryml in 0.11s
+  DRYML: Compiled app/views/taglibs/auto/rapid/forms.dryml in 0.07s
+  DRYML: Compiled app/views/taglibs/application.dryml in 0.01s
+  DRYML: Compiled app/views/taglibs/front_site.dryml in 4.85s
+  Rendered controller: users; dryml-tag: login-page (2952.2ms)
+Completed 200 OK in 8624ms (Views: 8522.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.57 at 2013-07-03 14:25:03 +0900
+Processing by FrontController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `users` 
+Redirected to http://192.168.0.100:3000/login
+Filter chain halted as #<Proc:0xc23e018@/home/ubuntu/Documents/projects/panther/app/controllers/application_controller.rb:5> rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 192.168.0.57 at 2013-07-03 14:25:08 +0900
+Processing by UsersController#login as HTML
+  Rendered controller: users; dryml-tag: login-page (568.6ms)
+Completed 200 OK in 575ms (Views: 571.4ms | ActiveRecord: 0.0ms)
